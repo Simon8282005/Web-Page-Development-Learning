@@ -1,0 +1,370 @@
+/* index.html */
+/* Link style */
+li {
+    list-style: none;
+}
+
+.kurikulum a {
+    position: fixed;
+    padding-left: 150px;
+    padding-top: 200px;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+
+.kurikulum a:hover{
+    position: fixed;
+    padding-left: 150px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.aktiviti a {
+    position: fixed;
+    padding-top: 200px;
+    padding-left: 150px;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+
+.aktiviti a:hover{
+    position: fixed;
+    padding-top: 200px;
+    padding-left: 150px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.peluang a {
+    position: fixed;
+    padding-left: 150px;
+    padding-top: 170px;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+
+.peluang a:hover{
+    position: fixed;
+    padding-left: 150px;
+    padding-top: 170px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.sambung a {
+    position: fixed;
+    padding-top: 170px;
+    padding-left: 150px;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+
+.sambung a:hover{
+    position: fixed;
+    padding-top: 170px;
+    padding-left: 150px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+/* Background image*/
+body {
+    /* overflow-y: scroll; */
+    position: fixed;
+    top: 0em;
+    /* Background image */
+    background-image: url("./background.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: grey;
+}
+
+.kurikulum {
+    position: fixed;
+    top: 10em;
+    left: 20em;
+    right: 40em;
+
+    background-color: teal;
+    background-position: center center;
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+    /* outline: grey; */
+    width: 300px;
+    height: 300px;
+    
+    border: white solid;
+    /* padding: 1em; */
+    color: white;
+}
+
+.kurikulum :hover{
+    color: whitesmoke;
+}
+
+.aktiviti {
+    position: fixed;
+    top: 10em;
+    left: 40em;
+    right: 20em;
+
+    background-color: rgb(0, 153, 255);
+    background-position: center center;
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+    /* outline: grey; */
+    width: 300px;
+    height: 300px;
+    
+    border: white solid;
+    /* padding: 1em; */
+    color: white;
+}
+
+.peluang {
+    position: fixed;
+    top: 30em;
+    left: 20em;
+    right: 40em;
+
+    background-color: rgb(255, 187, 0);
+    background-position: center center;
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+    /* outline: grey; */
+    width: 300px;
+    height: 300px;
+    
+    border: white solid;
+    /* padding: 1em; */
+    color: white;
+}
+
+.sambung {
+    position: fixed;
+    top: 30em;
+    left: 40em;
+    right: 20em;
+
+    background-color: rgb(225, 0, 255);
+    background-position: center center;
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+    /* outline: grey; */
+    width: 300px;
+    height: 300px;
+    
+    border: white solid;
+    /* padding: 1em; */
+    color: white;
+}
+
+/* Define header */
+.header {
+    position: fixed;
+    top: 0em;
+    left: 7.5em;
+    color: white;
+    border: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+/*
+kurikulum.html
+*/
+
+/* Background image*/
+.kurikulum_body {
+    background-image: url("./kurikulum_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: xx-large;
+}
+
+.perengan1 {
+    overflow-y: scroll;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 500px;
+    height: 400px;
+    border: black solid thick;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.perengan1:hover {
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.perengan2 {
+    overflow-y: scroll;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 500px;
+    height: 400px;
+    border: black solid thick;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.perengan2:hover {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.perengan3 {
+    overflow-y: scroll;
+    position: fixed;
+    left: 250px;
+    bottom: 5px;
+    width: 800px;
+    height: 400px;
+    border: black solid thick;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.perengan3:hover {
+    color: rgba(255, 255, 255, 0.452);
+}
+
+/* 
+aktiviti.html
+*/
+
+/* Background images*/
+.aktiviti_body {
+    background-image: url("./aktiviti_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.hourofcode {
+    color: whitesmoke;
+    position: fixed;
+    left: 350px;
+}
+
+.hourofcode img:hover {
+    border: 1px solid #ccc;
+}
+
+.hundertdaysofcode {
+    color: whitesmoke;
+    position: fixed;
+    top: 400px;
+    right: 100px;
+}
+
+.hundertdaysofcode img:hover {
+    border: 1px solid #ccc;
+}
+
+.freecodecamp {
+    color: whitesmoke;
+    position: fixed;
+    top: 400px;
+    left: 100px;
+}
+
+.freecodecamp img:hover {
+    border: 1px solid #ccc;
+}
+
+/*
+sambung.html
+*/
+
+/* Background image*/
+.sambung_body {
+    background-image: url("./pencapaian_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sambung_body .description {
+    padding-left: 100px;
+    font-size: 72px;
+}
+
+.sambung_body .description .list_university a {
+    text-decoration: none;
+    color: black;
+}
+
+.sambung_body .description .list_university a:hover {
+    color: white;
+}
+
+/*
+pekerjaan.html
+*/
+
+/* Background image*/
+.pekerjaan_body {
+    background-image: url("./peluang_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.responsive .name {
+    height: 800px;
+    width: 980px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 300px;
+}
+
+.responsive .name:hover {
+    color: rgb(255, 255, 255);
+}
+
+.responsive .name img {
+    padding-left: 100px;
+    width: 50%;
+    height: auto;
+}
+
+.responsive .name a {
+    font-size: large;
+    color: white;
+}
+
+.responsive .name a:hover {
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.308);
+}
