@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <style>
+
+        /* Custome font */
+        @font-face {
+            font-family: "hand-writting";
+            src: local("C:\WINDOWS\FONTS\INKFREE.TTF") format('ttf');
+        }
+
+        @font-face {
+            font-family: 'mc-text';
+            src: local("MinecraftTen-VGORe.ttf") format('truetype')
+        }
+
+        header {
+            font-size: 52px;
+            text-align: center;
+            text-decoration: solid;
+            padding: 10px;
+            font-family: 'Minecraft';
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-family: 'hand-writting', cursive;
+            background-color: lightsalmon;
+            border-bottom: dotted;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: dotted;
+            padding-bottom: 10px;
+            background-color: lightgreen;
+            font-family: 'hand-writting', cursive;
+        }
+
+        p {
+            font-size: 16px;
+            color:crimson;
+            text-align: center;
+            font-family: 'hand-writting', cursive;
+            font-size: 20px;
+        }
+
+        a {
+            color: black;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            border: 1px;
+            margin: 10px;
+        }
+
+        a:hover {
+            color: green;
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            border-style: dotted;
+            display: flex;
+            justify-content: center;
+            font-family: 'Minecraft';
+        }
+
+        /* Blink effect */
+        body {
+            background-image: image('intro_picture.jpg');
+        }
+
+        @keyframes blink {
+            0%, 100% { color: green; }
+            50% { color: lightgreen; }
+        }
+
+        footer {
+            font-family: 'Minecraft';
+            animation: blink 5s infinite;
+            text-align: center;
+        }
+
+        ol {
+            text-align: center;
+            text-decoration: none;
+        }
+
+        ol li {
+            text-decoration: none;
+            list-style: square;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        div img {
+            display: flex;
+            margin: 10px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Trillium Media Design</header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#project">Project</a>
+    </nav>
+
+    <h1>Welcome to Blocktopia!</h1>
+    <p>
+        Whether you're a redstone wizard, a survival expert, or just love building epic worlds one block at a time, you've found your new favorite corner of the internet. Here at Blocktopia, we celebrate creativity, adventure, and the pixel-perfect charm of Minecraft.
+    </p>
+    </p>
+    
+    <h2>What you will found here</h2>
+    <div>
+        <img width="500px" src="intro_picture.jpg" alt="Minecraft intro_picture">
+        
+    </div>
+    <ol>
+        <li> 🎮 Tips and tricks for surviving your first night</li>
+        <li> 🏰 Build showcases from our community</li>
+        <li> ⚒️ Redstone tutorials and contraptions</li>
+    </ol>
+
+    <h2>Join the Community</h2>
+    <p>Our professional team will help u customaize your website !</p>
+
+    <footer>
+        &copy; 2025 Simon Sdn. Bhd. All rights reserved. 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Trillium Media Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</header>
+<body>
+
+    
+    <h1>Trillium Media Design</h1>
+    <nav>
+        <a href="Home.html">Home</a>
+
+    </nav>
+    <p>Here are the content for this web site</p>
+
+    <h2>Survey form</h2>
+    <form>
+        <div class="mb-3">
+            <label for="fname">First name: </label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Your First Name" required>
+            <div id="fnameHelp" class="form-text">Please share your first name with us. </div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="lname">Last name: </label>
+            <input type="text" class= "form-control" id="lname" name="lname" placeholder="Your Last Name" required="Please enter your last name">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="email">Email address: </label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email address" required="Please enter your email address">
+            <div id="emailHelp" class="form-text">We'll keep your email secure. Don't worry about it.</input>
+        </div>
+        <br>
+        <div>
+            <label for="url">Suggestion Url: </label>
+            <input type="url" class= "form-control" id="url" name="url" placeholder="Url link here" required="Please enter your url link">
+        </div>
+        <br>
+        <div>
+            <label for="phoneNum">Yor phone number: </label>
+            <input type="tel" id="phoneNum" name="phoneNum" placeholder= "Phone number" pattern="xxx-xxxxxxxx" required="Please enter your phone number">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required="Please enter your password">
+        </div>
+        <br>
+        <div>
+            <label for="birthdate">Birthdate: </label>
+            <input type="date" id="date" name="date" required="Please enter your birthdate">
+        </div>
+        <br>
+        <div>
+            <label for="searchbox">Search box: </label>
+            <input type="search" id="searchbox" name="searchbox" placeholder="Serach somethings here..">
+        </div>
+
+        <!-- Datalist exmpale -->
+        
+        <br>
+        <div>
+            <label for="datalist">Choose your favourite fruits: </label>
+            <input list="fruits" id="fruits" name="fruits">
+
+            <datalist id="fruits">
+                <option value="Apple">
+                <option value="Banana">
+                <option value="Cherry">
+                <option value="Date">
+                <option value="Grape">
+                <option value="Mango">
+            </datalist>
+        </div>
+        <br>
+
+        <!-- Drop down menu-->
+        
+        <div>
+            <label for="language">Select your language: </label>
+            <input type="text">
+
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="zh">Chinese</option>
+                <option value="ms">Malay</option>
+                <option value="jp">Japanese</option>
+                <option value="fr">French</option>
+
+            </select>
+        </div>
+
+        <!-- Slider Example -->
+        <br>
+        <div>
+            <label for="volume">Volume control: </label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50" step="1" oninput="output.value = volume.value">
+            <output id="output"> 50 </output>
+        </div>
+        <br>
+        <div>
+            <button type="button"> Submit </button>
+            <button type="button"> Reset </button>
+        </div>
+    </form>
+</body>
+<footer>
+    <p><i>Coppyright @2025 UMT FSKM<i></p>
+</footer>
+</html>
