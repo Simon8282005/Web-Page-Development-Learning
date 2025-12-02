@@ -1,0 +1,30 @@
+body {
+    background-color: #e6e6fa;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1 {
+    background-color: grey;
+    color: #e6e6fa;
+    line-height: 200%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    background-color: green;
+    color: #191970;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.normal-text {
+    background-color: darkgray;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    animation: blink;
+}
+
+@keyframes blink {
+    0%, 100% { color: lightgrey; }
+    50% { color: black ;}
+}
