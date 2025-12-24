@@ -6,13 +6,17 @@
     <title>Hello Tailwind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">Navigation Bar</a>
-                <button class="btn btn-light" id="dark-button">Toggle Dark Mode</button>
+                <button class="btn btn-outline-secondary" id="dark-button">
+                    <i class="bi bi-moon-stars-fill me-2" id="theme-icon"></i>
+                    <span>Switch Theme</span>
+                </button>
             </div>
         </nav>
     </div>
@@ -26,15 +30,22 @@
         const darkModeButton = document.getElementById('dark-button');
         console.log(darkModeButton);
         const htmlElement = document.documentElement;
+        const themeIcon = document.getElementById('theme-icon');
 
-        function setTheme(theme) {
-            htmlElement.setAttribute('data-bs-theme', theme);
-        }
+
 
         darkModeButton.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-bs-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            setTheme(newTheme);
+            document.documentElement.setAttribute('data-bs-theme', newTheme);
+
+            if (currentTheme === 'dark') {
+                themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill',);
+                darkModeButton.classList.replace('btn-outline-secondary', 'btn-outline-dark');
+            } else {
+                themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+                darkModeButton.classList.replace('btn-outline-dark', 'btn-outline-secondary');
+            }
         });
 
     </script>
